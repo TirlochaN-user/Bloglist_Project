@@ -1,6 +1,6 @@
 .post {
     position: relative;
-    width: 90%;
+    width: 40%;
     height: 20%;
     background: #fff;
     box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
@@ -22,17 +22,21 @@
         width: 75%;           
         display: table-cell;
         text-align: left;
+        text-justify: auto;
         background-color: #E8E8E8;
         color: #000000;
         border-radius: 0 15px 15px 0;
-        padding: 0 20px;      
+        padding: 0 20px;   
+      
 }
 .post-title{
     font-family: 'Itim', cursive;
     font-weight: bold;
     color: #2b312b;
     font-size: 25px;
-    height: 25px;
+    height:25px;
+    padding:10px;
+    margin-top: 0px;
     }
 .post-more {
     float: right;
@@ -46,6 +50,9 @@
 .post-desc{
     height: 100px;
     margin-bottom: 0 !important;
+    padding:10px;
+    text-overflow: clip;
+    overflow: hidden; 
 }
 
 body {
@@ -58,7 +65,63 @@ body {
     background-size: 2000% 2000%;
 }
 .allPostsContainer {
-    height: 100%;
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+
+}
+/*more CSS styles added */
+#main-header{
+    font-size: 40px;
+    font-style: italic;
+    font-weight: lighter;
+    font-family: 'Leckerli One', cursive;
+    color:rgb(10, 69, 230);
+    
+ }
+ #sub-header{
+    font-weight: 100;
+    font-family: 'Leckerli One', cursive;
+ }
+ #btn-span{
+    position: absolute;
+    right: 0px;
+ }
+ .header-btn{
+    width:90px;
+    padding:5%;
+    color:white;
+    background-color:blue;
+ }
+ @media(max-width:735px)
+ {
+     .post-title{
+         font-size: 120%;
+     }
+ }
+ @media(max-width:615px)
+ {
+     .post-title{
+         font-size: 100%;
+     }
+ }
+ @media(max-width:545px)
+ {
+     .post-title{
+         font-size: 80%;
+     }
+ }
+ #ellipicon{
+	position:absolute;
+	bottom:5px;
+    right:10px;
+    color:black;
+
+}
+#trashicon{
+	position:absolute;
+	top:5px;
+    right:10px;
+    color:black;
 
 }

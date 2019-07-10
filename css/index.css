@@ -1,0 +1,48 @@
+body{
+   background: url('background.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center center;
+   background-size: cover;
+   margin: 0 !important;
+   background-size: 100% cover!important;
+   overflow:hidden;
+   display: block;
+} 
+
+/* Set a style for the rest of the elements besides the header elements on the index.html page */
+#main-header{
+   font-size: 40px;
+   font-style: italic;
+   font-weight: lighter;
+   font-family: 'Leckerli One', cursive;
+   color:rgb(10, 69, 230);
+   
+}
+#sub-header{
+   font-weight: 100;
+   font-family: 'Leckerli One', cursive;
+}
+#btn-span{
+   position: absolute;
+   right: 0px;
+}
+.header-btn{
+   width:90px;
+   padding:5%;
+   color:white;
+   background-color:blue;
+}
+.postButtons{
+   position: absolute;
+   left: 40%;
+   top: 50%;
+}
+.post-btn{
+   width:90px;
+   padding:5px;
+   border:2px solid rgb(243, 223, 223);
+   background-color: rgba(236, 184, 12, 0.897);
+   color: black;
+   font-weight: bolder;
+}                               

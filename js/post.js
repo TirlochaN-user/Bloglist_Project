@@ -27,3 +27,23 @@ function changeBlog(x)
 
     }
 }
+var likes=0;
+function likefunc()
+{
+    var lbutton=document.getElementById('likeB');
+    var lpara=document.getElementById('likePara');
+    console.log(lpara);
+    if(likes==0)
+    {
+        lpara.innerHTML="Be the first one to like this!";
+        likes++;
+    }
+    else
+    {
+        lpara.innerHTML=`${likes} people have liked this`;
+        lbutton.innerHTML='<i class="fa fa-thumbs-up"></i>Liked';
+        likes++;
+
+    }
+}
+likefunc();

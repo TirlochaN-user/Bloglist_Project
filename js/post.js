@@ -51,7 +51,7 @@ function commentadd()
     if(commentbox.value)
     {
         var newcomment=`<div class="comment">${commentbox.value}</div>`;
-        comments.innerHTML+=newcomment;
+        comments.innerHTML=newcomment+comments.innerHTML;
         commentbox.value='';
     }
 }

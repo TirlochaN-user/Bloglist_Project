@@ -14,8 +14,6 @@ function changeBlog(x)
 {
     var blogT=document.getElementById('blogTitleNew');
     var blogB=document.getElementById('blogBody');
-    console.log(blogT);
-    console.log(blogB);
     if(x==1)
     {
         blogB.setAttribute('contentEditable','true');
@@ -32,7 +30,6 @@ function likefunc()
 {
     var lbutton=document.getElementById('likeB');
     var lpara=document.getElementById('likePara');
-    console.log(lpara);
     if(likes==0)
     {
         lpara.innerHTML="Be the first one to like this!";
@@ -47,3 +44,14 @@ function likefunc()
     }
 }
 likefunc();
+function commentadd()
+{
+    var comments=document.getElementById('allcomment');
+    var commentbox=document.getElementById('commenttextarea');
+    if(commentbox.value)
+    {
+        var newcomment=`<div class="comment">${commentbox.value}</div>`;
+        comments.innerHTML+=newcomment;
+        commentbox.value='';
+    }
+}

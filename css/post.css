@@ -117,3 +117,11 @@
  #allcomment{
      padding-top: 10px;
  }
+ .comment{
+     width:80%;
+     background-color: white;
+     border:10px solid grey;
+     border-bottom-width: 5px;
+     border-top-width: 5px;
+     padding:10px;
+ }

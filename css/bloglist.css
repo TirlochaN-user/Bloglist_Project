@@ -123,5 +123,72 @@ body {
 	top:5px;
     right:10px;
     color:black;
+    cursor: pointer;
+    font-size:20px;
 
+}
+/* MODAL PART FOR DELETE*/
+.modal {
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    
+ }
+ .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #deletemodal-content{
+    position: absolute;
+    top:30%;
+    left:30%;
+    color:black;
+    background-color: #fefefe;
+    padding: 20px;
+    border: 2px solid #888;
+    width: 35%;
+    height:20%; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  #modal-button{
+      font-size: 30px;
+  }
+ .modal-yesbutton{
+     position: absolute;
+     left:0px;
+     width:80px;
+     height:30px;
+     font-size:20px;
+ }
+ .modal-yesbutton{
+    position: absolute;
+    left:30px;
+    bottom:40px;
+    width:80px;
+    height:30px;
+    font-size:20px;
+    background-color: green;
+    color:white;
+    border-style: none;
+    border-radius: 3px;
+}
+.modal-nobutton{
+    position: absolute;
+    right:30px;
+    bottom:40px;
+    width:80px;
+    height:30px;
+    font-size:20px;
+    background-color: red;
+    color:white;
+    border-style: none;
+    border-radius: 3px;
 }

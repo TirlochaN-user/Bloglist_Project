@@ -124,4 +124,36 @@ body{
 #myModalSignin > div > form > p:nth-child(6) > span{
    cursor: pointer;
 }
+/* CREATE POST MODAL PART */
+.postmodal-content{
+   position: absolute;
+   top:10%;
+   left:10%;
+   background-color: #c9f5c7;
+   padding: 20px;
+   border: 1px solid #888;
+   width: 70%;
+   height:80%; 
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.postmodal-content form p{
+   font-weight: bold;
+   font-size: 18px;
+}
+.postmodal-content form input{
+   width:70%;
+   height:30px;
+}
+.postmodal-content h3{
+   font-size: 25px;
+   text-align: center;
+}
+#postContentInput{
+   width:70%;
+   height:150px;
+}
+.postmodal-content button{
+   width:30%;
+}
+
 

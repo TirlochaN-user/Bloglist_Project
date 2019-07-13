@@ -37,3 +37,19 @@ function closeSignUpModal()
     modalelement.style.display='none';
 
 }
+function showpostmodal(x)
+{
+    var postmodal=document.getElementById('postmodal');
+    if(x==0)
+        postmodal.setAttribute('style','display:none');
+    else
+        postmodal.setAttribute('style','display:block');
+}
+showpostmodal(0);
+function closePostModal()
+{
+    var modalelement=document.getElementById('postmodal');
+    var body=document.querySelector('body');
+    body.style.display='';
+    modalelement.style.display='none';
+}

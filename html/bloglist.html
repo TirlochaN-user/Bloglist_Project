@@ -21,8 +21,8 @@
                  <div class="header">
                         <span id="main-header">ScriBBler</span>
                             <span id="btn-span">
-                                <button class="header-btn">Sign In</button>
-                                <button class="header-btn">Sign Up</button>
+                                <button class="header-btn" onclick="showSignInModal(1)">Sign In</button>
+                                <button class="header-btn" onclick="showSignUpModal(1)">Sign Up</button>
                         </span>
                         <div id="sub-header">Explore, Imagine, Create</div>
                 </header>
@@ -30,15 +30,49 @@
 
         </div>
     </div>
-    <div>
+    <div id="myModalSignin" class="modal"> 
 
         <!-- Insert code for Sign In modal here -->
+        <div class="signin-modal-content">
+                <div class="modal-header">
+                    <span id="close" onclick="closeSignInModal()" class="close">&times;</span>
+                    <h3 style="text-align: center">Welcome Back!</h3>
+                    <hr>
+                </div>
+                <form>
+                    <p>Username</p>
+                    <input class="input-form" type="text" name="userName" id="userName" placeholder="Enter Username" required>
+                    <p>Password</p>
+                    <input class="input-form" type="password" name="password" id="password" placeholder="Enter Password" required>
+                    <button class="button3">Sign In</button>
+                    <p style="text-align: center">Not a Member ? <span style="color: blue" onclick="showSignUpModal(2)">Sign Up</span></p>
+                </form>
+        </div>
+        
 
     </div>
 
-    <div>
+    <div id="myModalSignUp" class="modal">
 
         <!-- Insert code for Sign Up modal here -->
+        <div class="signup-modal-content">
+                <div class="modal-header">
+                    <span id="close" onclick="closeSignUpModal()" class="close">&times;</span>
+                    <h3 style="text-align: center">Get Started</h3>
+                    <hr>
+                </div>
+                <form>
+                    <p>Username</p>
+                    <input class="input-form" type="text" name="fullName" id="fullName" placeholder="Enter Full Name" required>
+                    <p>Username</p>
+                    <input class="input-form" type="text" name="userName" id="userName" placeholder="Enter Username" required>
+                    <p>Password</p>
+                    <input class="input-form" type="password" name="password" id="password" placeholder="Enter Password" required>
+                    <p>Confirm Password</p>
+                    <input class="input-form" type="password" name="confPassword" id="confPassword" placeholder="Confirm Password" required>
+                    <button class="button3">Sign Up</button>
+                </form>
+        </div>
 
     </div>
 
